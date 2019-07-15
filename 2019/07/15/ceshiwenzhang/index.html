@@ -112,24 +112,23 @@
 <meta name="keywords" content="博客,购物车">
 <meta property="og:type" content="article">
 <meta property="og:title" content="day01">
-<meta property="og:url" content="http://yoursite.com/2019/07/15/day01/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/07/15/ceshiwenzhang/index.html">
 <meta property="og:site_name" content="Z‘s Blog">
 <meta property="og:description" content="1.搭建购物车服务1.1.创建module1.2.pom依赖  12345678910111213141516171819202122232425262728293031323334&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&amp;lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;         xml">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/07/15/day01/07/15/day01/1527849592739.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/15/day01/1527585343248.png">
-<meta property="og:updated_time" content="2019-07-15T06:30:40.510Z">
+<meta property="og:image" content="http://yoursite.com/2019/07/15/ceshiwenzhang/1527585343248.png">
+<meta property="og:updated_time" content="2019-07-15T08:21:56.870Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="day01">
 <meta name="twitter:description" content="1.搭建购物车服务1.1.创建module1.2.pom依赖  12345678910111213141516171819202122232425262728293031323334&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&amp;lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;         xml">
-<meta name="twitter:image" content="http://yoursite.com/2019/07/15/day01/07/15/day01/1527849592739.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/15/ceshiwenzhang/1527585343248.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/15/day01/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/15/ceshiwenzhang/">
 
 
 
@@ -317,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/15/day01/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/15/ceshiwenzhang/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZhengMingdi">
@@ -359,7 +358,7 @@
                 
               
 
-              <time title="创建时间：2019-07-15 13:21:09 / 修改时间：14:30:40" itemprop="dateCreated datePublished" datetime="2019-07-15T13:21:09+08:00">2019-07-15</time>
+              <time title="创建时间：2019-07-15 13:21:09 / 修改时间：16:21:56" itemprop="dateCreated datePublished" datetime="2019-07-15T13:21:09+08:00">2019-07-15</time>
             
 
             
@@ -425,7 +424,7 @@
       
 
       
-        <h1 id="1-搭建购物车服务"><a href="#1-搭建购物车服务" class="headerlink" title="1.搭建购物车服务"></a>1.搭建购物车服务</h1><h2 id="1-1-创建module"><a href="#1-1-创建module" class="headerlink" title="1.1.创建module"></a>1.1.创建module</h2><h2 id="1-2-pom依赖"><a href="#1-2-pom依赖" class="headerlink" title="1.2.pom依赖"></a>1.2.pom依赖</h2><img src="/2019/07/15/day01/07/15/day01/1527849592739.png" title="zheshiceshi">
+        <h1 id="1-搭建购物车服务"><a href="#1-搭建购物车服务" class="headerlink" title="1.搭建购物车服务"></a>1.搭建购物车服务</h1><h2 id="1-1-创建module"><a href="#1-1-创建module" class="headerlink" title="1.1.创建module"></a>1.1.创建module</h2><h2 id="1-2-pom依赖"><a href="#1-2-pom依赖" class="headerlink" title="1.2.pom依赖"></a>1.2.pom依赖</h2>
 
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>leyou<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.leyou.parent<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.leyou.service<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>ly-cart<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-openfeign<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-redis<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -454,7 +453,7 @@
 <li>在购物车中展示商品优惠信息</li>
 <li>提示购物车商品价格变化</li>
 </ul>
-<h2 id="2-2-流程图"><a href="#2-2-流程图" class="headerlink" title="2.2.流程图"></a>2.2.流程图</h2><p><img src="/2019/07/15/day01/1527585343248.png" alt></p>
+<h2 id="2-2-流程图"><a href="#2-2-流程图" class="headerlink" title="2.2.流程图"></a>2.2.流程图</h2><p><img src="/2019/07/15/ceshiwenzhang/1527585343248.png" alt></p>
 <p>这幅图主要描述了两个功能：新增商品到购物车、查询购物车。</p>
 <p>新增商品：</p>
 <ul>
@@ -511,8 +510,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/15/我的文章/" rel="next" title="我的文章">
-                <i class="fa fa-chevron-left"></i> 我的文章
+              <a href="/2019/07/15/day01/" rel="next" title="day01">
+                <i class="fa fa-chevron-left"></i> day01
               </a>
             
           </div>
@@ -520,10 +519,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/15/ceshiwenzhang/" rel="prev" title="day01">
-                day01 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
